@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Image(
-              image: AssetImage('assets/logo.png'),
+              image: AssetImage('assets/icons/logo.png'),
               width: 150,
               height: 150,
             ),
@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'Welcome to',
               style: Theme.of(context).textTheme.headline2,
             ),
-            Text(
+            const Text(
               'PeerH - A Student Platform',
             ),
           ],
