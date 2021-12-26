@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: const MyHomePage(
-        title: 'PeerH - A Student Platform',
+        title: 'PeerH : A Student Platform',
       ),
     );
   }
