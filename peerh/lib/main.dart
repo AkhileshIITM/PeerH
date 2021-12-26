@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -91,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               'Welcome to',
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.headline2,
             ),
             Text(
               'PeerH - A Student Platform',
