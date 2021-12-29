@@ -1,4 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:peerh/globals.dart';
+import 'package:peerh/provider/google_sign_in.dart';
+import 'package:provider/provider.dart';
 
 class CreateProfilePage extends StatefulWidget {
   const CreateProfilePage({Key? key}) : super(key: key);
@@ -13,24 +17,40 @@ class _CreateProfilePageState extends State<CreateProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xff79201B),
+        backgroundColor: Globals.iitmbeige,
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             'Create Your Profile',
             style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
-                color: Color(0xffD7A74F)),
+                color: Globals.iitmcream),
           ),
           centerTitle: true,
+          backgroundColor: Globals.iitmmaroon,
+          actions: [
+            TextButton(
+                onPressed: () {
+                  final provider =
+                      Provider.of<GoogleSigninProvider>(context, listen: false);
+                  provider.googleLogout();
+                },
+                child: const Text(
+                  'logout',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                ))
+          ],
         ),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
               width: MediaQuery.of(context).size.width * 0.9,
-              height: 800,
-              // height: MediaQuery.of(context).size.width * 0.8,
+              //height: 800,
+              height: MediaQuery.of(context).size.height * 0.9,
               decoration: BoxDecoration(
                   color: Colors.white, borderRadius: BorderRadius.circular(20)),
               child: Form(
@@ -38,6 +58,10 @@ class _CreateProfilePageState extends State<CreateProfilePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    SizedBox(
+                      height: 32,
+                    ),
+
                     Padding(
                       padding: const EdgeInsets.only(top: 30, left: 20),
                       child: Text(

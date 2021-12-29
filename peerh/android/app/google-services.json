@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "402286107535",
+    "project_id": "peerh-48686",
+    "storage_bucket": "peerh-48686.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402286107535:android:ce495a643237e58182c9fa",
+        "android_client_info": {
+          "package_name": "com.example.peerh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402286107535-6p6m9nblqeftpncc9035rtf1q8m8mhj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFYdqKQjYUDKqDcJRzzS4XivmbwVTSW_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402286107535-6p6m9nblqeftpncc9035rtf1q8m8mhj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
